@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粤旅游 - 广东旅游指南</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">粤旅游</div>
+            <ul class="nav-links">
+                <li><a href="#">首页</a></li>
+                <li>
+                    <a href="#">目的地</a>
+                    <ul class="submenu">
+                        <li><a href="#guangzhou">广州</a></li>
+                        <li><a href="#shenzhen">深圳</a></li>
+                        <li><a href="#zhuhai">珠海</a></li>
+                        <li><a href="#chaozhou">潮州</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">旅游指南</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>探索广东之美</h1>
+                <p>发现岭南文化的精髓，从繁华都市到宁静乡村，体验广东的独特魅力</p>
+                <a href="#" class="btn">开始探索</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 热门目的地 -->
+<section class="container" id="destinations">
+    <h2 class="section-title">热门目的地</h2>
+    <div class="show-more-container">
+        <button class="show-more-btn" id="showMoreBtn">
+            显示更多目的地
+            <i>▼</i>
+        </button>
+    </div>
+    <div class="destinations">
+        <!-- 默认显示的3个目的地 -->
+        <div class="destination-card" id="guangzhou">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1553826059-7a090c4bd362?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="广州">
+            </div>
+            <div class="card-content">
+                <h3>广州</h3>
+                <p>现代化大都市与传统岭南文化的完美融合</p>
+                <a href="#guangzhou" class="btn">查看详情</a>
+            </div>
+        </div>
+        
+        <div class="destination-card" id="shenzhen">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1560846658-49aa5a9d69b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="深圳">
+            </div>
+            <div class="card-content">
+                <h3>深圳</h3>
+                <p>中国最具创新力的城市，现代化都市景观</p>
+                <a href="#shenzhen" class="btn">查看详情</a>
+            </div>
+        </div>
+        
+        <div class="destination-card" id="zhuhai">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="珠海">
+            </div>
+            <div class="card-content">
+                <h3>珠海</h3>
+                <p>浪漫的海滨城市，长隆海洋王国所在地</p>
+                <a href="#zhuhai" class="btn">查看详情</a>
+            </div>
+        </div>
+        
+        <!-- 默认隐藏的目的地 -->
+        <div class="destination-card hidden" id="chaozhou">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="潮州">
+            </div>
+            <div class="card-content">
+                <h3>潮州</h3>
+                <p>历史文化名城，潮汕文化的发源地</p>
+                <a href="#chaozhou" class="btn">查看详情</a>
+            </div>
+        </div>
+        
+        <div class="destination-card hidden" id="foshan">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="佛山">
+            </div>
+            <div class="card-content">
+                <h3>佛山</h3>
+                <p>武术之乡，岭南文化发源地之一</p>
+                <a href="#foshan" class="btn">查看详情</a>
+            </div>
+        </div>
+        
+        <div class="destination-card hidden" id="shaoguan">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1587334274530-50a26c5d0e0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="韶关">
+            </div>
+            <div class="card-content">
+                <h3>韶关</h3>
+                <p>丹霞山世界地质公园所在地</p>
+                <a href="#shaoguan" class="btn">查看详情</a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- 特色指南 -->
+    <section class="guides">
+        <div class="container">
+            <h2 class="section-title">广东旅游指南</h2>
+            <div class="guide-list">
+                <div class="guide-item">
+                    <img src="https://images.unsplash.com/photo-1560846658-49aa5a9d69b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="美食指南">
+                    <div class="guide-info">
+                        <h3>广东美食指南</h3>
+                        <p>探索粤菜的精华，从早茶到夜宵</p>
+                        <div class="guide-meta">
+                            <span>饮食文化</span>
+                            <span>10篇文章</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-item">
+                    <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="文化遗产">
+                    <div class="guide-info">
+                        <h3>岭南文化遗产</h3>
+                        <p>探索广东丰富的历史与传统文化</p>
+                        <div class="guide-meta">
+                            <span>历史文化</span>
+                            <span>8篇文章</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-item">
+                    <img src="https://images.unsplash.com/photo-1553826059-7a090c4bd362?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="自然风光">
+                    <div class="guide-info">
+                        <h3>广东自然风光</h3>
+                        <p>从丹霞山到南岭国家公园</p>
+                        <div class="guide-meta">
+                            <span>自然景观</span>
+                            <span>12篇文章</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-item">
+                    <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="城市探索">
+                    <div class="guide-info">
+                        <h3>城市探索指南</h3>
+                        <p>广东主要城市的最佳游览方式</p>
+                        <div class="guide-meta">
+                            <span>城市旅游</span>
+                            <span>15篇文章</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 页脚 -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>关于我们</h3>
+                <ul class="footer-links">
+                    <li><a href="#">团队介绍</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">加入我们</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>帮助中心</h3>
+                <ul class="footer-links">
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">旅游贴士</a></li>
+                    <li><a href="#">安全指南</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2023 粤旅游. 保留所有权利.
+        </div>
+    </div>
+</footer>
+    
+    <script>
+        // JavaScript交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 导航栏滚动效果
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
+                } else {
+                    navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                }
+            });
+            
+            // 目的地导航点击滚动到对应区域
+            document.querySelectorAll('.submenu a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // 显示更多目的地功能
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            const hiddenDestinations = document.querySelectorAll('.destination-card.hidden');
+
+            showMoreBtn.addEventListener('click', function() {
+                // 切换按钮状态
+                this.classList.toggle('active');
+    
+                // 显示/隐藏额外目的地
+                hiddenDestinations.forEach(destination => {
+                destination.classList.toggle('hidden');
+                });
+    
+                // 更新按钮文本
+                if (this.classList.contains('active')) {
+                    this.innerHTML = '收起目的地 <i>▼</i>';
+                } else {
+                    this.innerHTML = '显示更多目的地 <i>▼</i>';
+                }
+    
+                // 如果显示了更多内容，滚动到目的地区域底部
+                if (this.classList.contains('active')) {
+                    const destinationsSection = document.getElementById('destinations');
+                    destinationsSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'end'
+                    });
+                }
+            });
+            
+            // 卡片点击效果
+            const cards = document.querySelectorAll('.destination-card, .guide-item');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // 这里可以添加跳转到详情页的逻辑
+                    console.log('跳转到详情页: ' + this.querySelector('h3').textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
